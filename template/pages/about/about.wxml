@@ -21,7 +21,7 @@
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
   <view class='text-center margin-bottom text-lg  text-grey'>联系方式</view>
   <view class='text-content'>
-   <view class='margin-top-sm' bindtap="copy" data-type="email">邮箱:<text class="text-blue" decode="{{true}}">&nbsp;&nbsp;2260129665@qq.com</text></view>
+   <view class='margin-top-sm' bindtap="copy" data-type="email">邮箱:<text class="text-blue" decode="{{true}}">&nbsp;&nbsp;wenxuliu@mail.hfut.edu.cn</text></view>
     <view class='margin-top-sm' bindtap="copy" data-type="blog">学校:<text class="text-blue" decode="{{true}}">&nbsp;&nbsp;合肥工业大学宣城校区</text></view>
   </view>
 </view>
