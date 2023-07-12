@@ -1,0 +1,66 @@
+<view class='demo' style="min-width:700rpx;margin:20rpx;border-radius: 20px;">
+        <view style="padding: 10rpx;background-color: #e9f8fb;font-size:11pt;">
+            <image src="/images/home/laba1.png" style="vertical-align: -5rpx;height: 35rpx; width: 36rpx;" mode="aspectFill"></image>
+            尊敬的用户，欢迎来到小依医
+        </view>
+</view>
+
+<!-- 焦点图 -->
+<swiper class="jdt" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"  duration="{{duration}}" indicator-color='white' indicator-active-color='#5eb67c'>
+    <view class="banner" wx:for="{{imgUrls}}" wx:key="id">
+        <swiper-item>
+            <image style="width: 850rpx; height: 280rpx; display: inline-block; box-sizing: border-box; left: 36rpx; top: 0rpx; position: relative" src="{{item}}" class="slide-image" mode="widthFix" bindload='setContainerHeight' />
+      </swiper-item>
+    </view>
+</swiper>
+
+<view class="bg-white" style="width: 690rpx; height: 188rpx; display: block; box-sizing: border-box; position: relative; left: 30rpx; top: 4rpx">
+      <view class="flex padding solid-bottom" style="width: 702rpx; height: 188rpx; display: flex; box-sizing: border-box; left: -12rpx; top: 0rpx; position: relative">
+  			<view class="flex-twice">
+  				<view class="text-xxl padding ">
+  					<text class="text-black text-bold">{{nickName}}</text>
+  				</view>
+  			</view>
+
+  			<view class="flex-sub">
+  				<view class="cu-avatar xl fr round margin-left" style="background-image:url({{imageUrl}});"></view>
+  			</view>
+  		</view>
+</view>
+
+
+  <view class="cu-list menu sm-border card-menu margin-top">
+  	<view class="cu-item arrow">
+  		<navigator class="content" hover-class="none" bindtap="click" url="../history/index">
+  			<text class="cuIcon-countdown text-cyan"></text>
+  			<text class="text-grey">历史记录</text>
+  		</navigator>
+  	</view>
+  	<view class="cu-item arrow">
+  		<navigator class="content" hover-class="none" bindtap="click" url="../bmi/index">
+  			<text class="cuIcon-hot text-red"></text>
+  			<text class="text-grey">BMI计算</text>
+  		</navigator>
+  	</view>
+      
+  	<view class="cu-item arrow">
+  		<navigator class="content" hover-class="none" bindtap="click" url="../setting/index">
+  			<text class="cuIcon-settings text-grey"></text>
+  			<text class="text-grey">程序设置</text>
+  		</navigator>
+  	</view>
+
+  	<view class="cu-item arrow">
+  		<navigator class="content" hover-class="none" bindtap="click" url="/template/pages/about/about">
+  			<text class="cuIcon-info text-orange"></text>
+  			<text class="text-grey">关于我们</text>
+  		</navigator>
+  	</view>
+    
+    
+    <view class='text-center margin-bottom text-lg  text-grey' >
+        <text decode="{{true}}">
+            Copyright © 2022 HFUT. All rights reserved. 
+        </text>
+    </view>
+  </view>

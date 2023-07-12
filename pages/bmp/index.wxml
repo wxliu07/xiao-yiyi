@@ -1,0 +1,40 @@
+<view class="margin-xl bg-white">
+    <view class="cu-bar bg-white solid-bottom ">
+		<view class='action'>
+			<text class='cuIcon-titles text-green '></text> 正常心率范围值:
+            <text class="text-blue" decode="{{true}}" >&nbsp;&nbsp;60-100 次/分
+            </text>
+		</view>
+	</view>
+    <view class="cu-bar bg-white solid-bottom ">
+		<view class='action'>
+			<text class='cuIcon-titles text-green '></text> 阵发性心动过速:
+            <text class="text-blue" decode="{{true}}" >&nbsp;&nbsp;160-220 次/分
+            </text>
+		</view>
+	</view>
+</view>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg' >
+    <view class='text-center margin-bottom text-lg  text-grey'>心率测量使用帮助</view>
+    <view class='text-content'>
+        点击测量按钮, 跳转页面后将手指放置在手机的后置摄像头上即可测量心率。数据实时生成，退出即刻销毁测量数据。
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+		<view class='action'>
+			<text class='cuIcon-titles text-orange '></text> 
+            历史测量记录
+		</view>
+	</view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+		<view class="text-center padding margin-top">
+			<text class="text-grey text-xl">暂无历史测量记录</text>
+		</view>
+	</view>
+</view>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'  style="position: relative; left: 0rpx; top: -135rpx">
+    <navigator url="/template/pages/demo/demo">
+        <button type="primary">开始测量</button>
+    </navigator>
+</view>

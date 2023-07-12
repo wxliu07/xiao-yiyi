@@ -1,0 +1,36 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg' >
+  <view class='text-center margin-bottom text-lg  text-grey'>关于我们</view>
+  <view class='text-content'>
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先感谢您的使用与支持,本小程序是我们基于大创项目所开发的一款测量个人血压和心率的小程序, 您可以通过使用手机摄像头来实时检测自己的血压和心率。
+    </text>
+
+    <text decode="{{true}}">
+    团队成员(排名不分先后): 
+    </text>
+
+    <text class="text-blue" decode="{{true}}">冯鼎智, &nbsp;刘文旭,&nbsp;卢艺丰,&nbsp;陈雅玲,&nbsp;杨志欣
+    </text>
+
+    <!-- <view>&nbsp;首先感谢您的使用与支持, </view>
+    <view class='margin-top-sm'>本小程序是我们基于大创项目所开发的一款测量个人心率的小程序。</view>
+    <view class='margin-top-sm'>目前项目正处于开发当中,<view class='margin-top-sm' bindtap="copy" data-type="gitee"><text class="text-blue">https://gitee.com/7gugu/energy_gym</text></view></view>
+    <view class='margin-top-sm'>Powered By 7gugu</view>    -->
+  </view>
+</view>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>联系方式</view>
+  <view class='text-content'>
+   <view class='margin-top-sm' bindtap="copy" data-type="email">邮箱:<text class="text-blue" decode="{{true}}">&nbsp;&nbsp;2260129665@qq.com</text></view>
+    <view class='margin-top-sm' bindtap="copy" data-type="blog">学校:<text class="text-blue" decode="{{true}}">&nbsp;&nbsp;合肥工业大学宣城校区</text></view>
+  </view>
+</view>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>隐私存储</view>
+  <view class='text-content'>
+    <view>小程序的所有数据都只能保存在本地</view>
+    <!-- <view class='margin-top-sm'>为了各位用户的隐私考虑,本小程序记录的所有运动数据,以及个人数据都只会保存在本地当中,只要你不删除这个小程序,数据就会永久的保存在你的手机之上。</view>
+    <view class='margin-top-sm'>如果您需要我们提供云存储服务,欢迎在"联系客服"处留言,我们将在评估后,在合适时间加入的。</view> -->
+  </view>
+</view>

@@ -1,0 +1,25 @@
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'  style="width: 652rpx; height: 1126rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -2rpx">
+    <camera device-position="back" frame-size="small" resolution="low" flash="on" binderror="error" style="width: 596rpx; height: 282rpx; position: relative; left: -22rpx; top: -29rpx; display: block; box-sizing: border-box"></camera>
+    <view class='text-center margin-bottom text-lg  text-grey' style="position: relative; left: 0rpx; top: 31rpx">心率测量</view>
+    <view class='text-content'>
+    <section id="bpm-display-container" style="position: relative; left: 1rpx; top: 0rpx">
+			<div id="bpm-display">
+				<output id="bpm-value" title="Heart rate">{{bpm}}</output>
+				<label>bpm</label>
+			</div>
+      
+		</section>
+		<section id="graph-container">
+			<canvas type="2d" id="heartRate" style="width: 552rpx; height: 306rpx; position: relative; left: 0rpx; top: -138rpx; display: block; box-sizing: border-box"></canvas>
+		</section>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg' >
+  <view class='text-center margin-bottom text-lg  text-grey'>使用帮助</view>
+  <view class='text-content'>
+    将手指放置在手机的后置摄像头上，即可测量心率。点击左上角的退出按钮即可结束本次测量。数据实时生成，退出即刻销毁测量数据。
+  </view>
+</view>
+
+

@@ -1,0 +1,74 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/setting/index",
+        "pages/me/index",
+        "pages/history/index",
+        "pages/history/detail",
+        "pages/login/index",
+        "pages/login/setting",
+        "pages/bmi/index",
+        "pages/bmp/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "@navBgColor",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小依医"
+    },
+    "usingComponents": {
+
+    },
+    "subPackages": [
+        {
+            "root" : "template",
+                "name":"athorInfo",
+                "pages":[
+                    "pages/about/about",
+                    "pages/demo/demo",
+                    "pages/demo1/demo1"
+                ]
+        }
+    ],
+    "tabBar": {
+        "backgroundColor": "@tabBarBackgroundColor",
+        "borderStyle": "white",
+        "selectedColor": "@tabBarSelectedColor",
+        "color": "@tabBarColor",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "@runIcon",
+                "selectedIconPath": "@runSelectedIcon",
+                "text": "血压测量"
+            },
+            {
+                "pagePath": "pages/me/index",
+                "iconPath": "@personIcon",
+                "selectedIconPath": "@personSelectedIcon",
+                "text": "我"
+            },
+            {
+                "pagePath": "pages/bmp/index",
+                "iconPath": "@heart_before",
+                "selectedIconPath": "@heart",
+                "text": "心率测量"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocationBackend": {
+        "desc": "您的位置信息将用于绘制您的运动轨迹"
+        },
+        "scope.writePhotosAlbum": {
+        "desc": "您的相册授权仅用于保存您的运动海报"
+        }
+
+    },
+    "darkmode": false,
+    "themeLocation":"theme.json",
+    "cloud": true,
+    "requiredBackgroundModes": ["location"],
+    "sitemapLocation": "sitemap.json"
+}
+
